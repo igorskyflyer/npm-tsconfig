@@ -60,30 +60,58 @@ Then extend the preferred config in `tsconfig.json`:
 **Node (default):**
 ```jsonc
 {
-  "extends": "@igorskyflyer/tsconfig"
+  "extends": "@igorskyflyer/tsconfig",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/**/*", "test/**/*", "dist/**/*"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  }
 }
 ```
 
 **Node (explicit):**
 ```jsonc
 {
-  "extends": "@igorskyflyer/tsconfig/node"
+  "extends": "@igorskyflyer/tsconfig/node",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/**/*", "test/**/*", "dist/**/*"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  }
 }
 ```
 
 **Browser:**
 ```jsonc
 {
-  "extends": "@igorskyflyer/tsconfig/browser"
+  "extends": "@igorskyflyer/tsconfig/browser",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/**/*", "test/**/*", "dist/**/*"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  }
 }
 ```
 
 **Base only:**
 ```jsonc
 {
-  "extends": "@igorskyflyer/tsconfig/base"
+  "extends": "@igorskyflyer/tsconfig/base",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/**/*", "test/**/*", "dist/**/*"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  }
 }
 ```
+
+>[!NOTE]
+> **Note:** `include`, `exclude`, `rootDir` and `outDir` are project-specific and must be defined locally.
+>
 
 <br>
 
@@ -94,11 +122,7 @@ All configs extend `base`, which defines the shared structure and strict rules.
 ### Base
 ```jsonc
 {
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/**/*", "test/**/*", "dist/**/*"],
   "compilerOptions": {
-    "rootDir": "./src",       // source files root
-    "outDir": "./dist",       // compiled output root
     "declaration": true,      // generate .d.ts files
     "declarationMap": true,   // generate .d.ts.map files
     "sourceMap": true,        // generate .js.map files
