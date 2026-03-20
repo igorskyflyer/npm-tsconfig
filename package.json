@@ -43,10 +43,6 @@
     "bugs": {
         "url": "https://github.com/igorskyflyer/npm-tsconfig/issues"
     },
-    "devDependencies": {
-        "@biomejs/biome": "^2.4.8",
-        "@igorskyflyer/biome-config": "^2.2.0"
-    },
     "peerDependencies": {
         "typescript": ">=5.0.0"
     },
