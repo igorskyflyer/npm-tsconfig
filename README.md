@@ -153,6 +153,8 @@ Managing `TypeScript` configuration across multiple projects is tedious and erro
 
 `@igorskyflyer/tsconfig` solves this by providing one opinionated, versioned config that propagates across all projects via a simple `extends`. *Update once, apply everywhere* - just like all packages of the `@igorskyflyer` ecosystem do!
 
+<br>
+
 ## Changelog
 
 Read about the latest changes in the [**CHANGELOG**](https://github.com/igorskyflyer/npm-tsconfig/blob/main/CHANGELOG.md).
