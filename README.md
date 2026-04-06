@@ -27,19 +27,23 @@
 
 ## Features
 
-- 🔧 Strict `TypeScript` rules enabled by default
-- 📦 Separate configs for `Node` and `browser` environments
-- 🎯 `ES2024` target - `modern` and future-ready
-- 🗂️ Predefined `src/`, `dist/` and `test/` structure
-- 🔍 Catches `unused` locals, parameters and implicit `any`
-- 🗺️ `Source maps` and `declaration` maps included
-- ⚡ `Zero-config` setup - extend and go
+- 🔧 Very strict TypeScript configuration by default (`strict: true` + modern strict options)
+- 📦 Separate configs for Node.js and browser environments
+- 🎯 `ES2024` target - modern and future-ready (requires Node ≥ 24)
+- 🗺️ Full source maps + declaration maps for excellent debugging and type publishing
+- ⚡ `verbatimModuleSyntax` + `isolatedDeclarations` for clean, modern module handling
+- 🔍 Strong type safety with `exactOptionalPropertyTypes`, `noUncheckedIndexedAccess`, and more
+- 🧩 Clean, reusable base - designed to be extended with minimal effort
 
 <br>
 
 ## Usage
 
 Install it by executing any of the following, depending on the preferred package manager:
+
+```bash
+bun add -D @igorskyflyer/tsconfig
+```
 
 ```bash
 pnpm add -D @igorskyflyer/tsconfig
@@ -55,10 +59,11 @@ npm i -D @igorskyflyer/tsconfig
 
 <br>
 
-Then extend the preferred config in `tsconfig.json`:
+Then extend the preferred config in **tsconfig.json**:
 
-**Node (default):**
-```jsonc
+**Node (default)**
+`tsconfig.json`
+```json
 {
   "extends": "@igorskyflyer/tsconfig",
   "include": ["src/**/*"],
@@ -70,8 +75,11 @@ Then extend the preferred config in `tsconfig.json`:
 }
 ```
 
-**Node (explicit):**
-```jsonc
+<br>
+
+**Node (explicit)**
+`tsconfig.json`
+```json
 {
   "extends": "@igorskyflyer/tsconfig/node",
   "include": ["src/**/*"],
@@ -83,8 +91,11 @@ Then extend the preferred config in `tsconfig.json`:
 }
 ```
 
-**Browser:**
-```jsonc
+<br>
+
+**Browser**
+`tsconfig.json`
+```json
 {
   "extends": "@igorskyflyer/tsconfig/browser",
   "include": ["src/**/*"],
@@ -96,8 +107,11 @@ Then extend the preferred config in `tsconfig.json`:
 }
 ```
 
-**Base only:**
-```jsonc
+<br>
+
+**Base only**
+`tsconfig.json`
+```json
 {
   "extends": "@igorskyflyer/tsconfig/base",
   "include": ["src/**/*"],
@@ -120,7 +134,8 @@ Then extend the preferred config in `tsconfig.json`:
 All configs extend `base`, which defines the shared structure and strict rules.
 
 ### Base
-```jsonc
+`tsconfig.json`
+```json
 {
   "compilerOptions": {
     "declaration": true,      // generate .d.ts files
@@ -142,7 +157,8 @@ All configs extend `base`, which defines the shared structure and strict rules.
 ### Node
 
 Extends `base` and adds `Node` environment targeting:
-```jsonc
+`tsconfig.json`
+```json
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
@@ -157,7 +173,8 @@ Extends `base` and adds `Node` environment targeting:
 ### Browser
 
 Extends `base` and adds `browser` environment targeting:
-```jsonc
+`tsconfig.json`
+```json
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
@@ -208,6 +225,10 @@ Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-tsconfi
 <br>
 
 ## Related
+
+This package is part of the [**dotfiles**](https://github.com/igorskyflyer/dotfiles) DX config suite - a curated index of independently installable configuration packages for linting, formatting, editing, JS/TS, React, Vue and many more.
+
+### Other related packages
 
 [**@igorskyflyer/duoscribi**](https://www.npmjs.com/package/@igorskyflyer/duoscribi)
 
