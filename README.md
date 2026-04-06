@@ -135,7 +135,7 @@ All configs extend `base`, which defines the shared structure and strict rules.
 
 ### Base
 `tsconfig.json`
-```json
+```jsonc
 {
   "compilerOptions": {
     "declaration": true,      // generate .d.ts files
@@ -158,7 +158,7 @@ All configs extend `base`, which defines the shared structure and strict rules.
 
 Extends `base` and adds `Node` environment targeting:
 `tsconfig.json`
-```json
+```jsonc
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
@@ -174,7 +174,7 @@ Extends `base` and adds `Node` environment targeting:
 
 Extends `base` and adds `browser` environment targeting:
 `tsconfig.json`
-```json
+```jsonc
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
