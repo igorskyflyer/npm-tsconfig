@@ -9,6 +9,8 @@
       "DOM.Iterable"
     ],
     "module": "ESNext",
-    "moduleResolution": "Bundler"
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true
   }
 }
