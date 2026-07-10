@@ -42,19 +42,19 @@
 Install it by executing any of the following, depending on the preferred package manager:
 
 ```bash
-bun add -D @igorskyflyer/tsconfig
+bun add @igorskyflyer/tsconfig -D
 ```
 
 ```bash
-pnpm add -D @igorskyflyer/tsconfig
+pnpm add @igorskyflyer/tsconfig -D
 ```
 
 ```bash
-yarn add -D @igorskyflyer/tsconfig
+yarn add @igorskyflyer/tsconfig -D
 ```
 
 ```bash
-npm i -D @igorskyflyer/tsconfig
+npm i @igorskyflyer/tsconfig -D
 ```
 
 <br>
@@ -138,18 +138,23 @@ All configs extend `base`, which defines the shared structure and strict rules.
 ```jsonc
 {
   "compilerOptions": {
-    "declaration": true,      // generate .d.ts files
-    "declarationMap": true,   // generate .d.ts.map files
-    "sourceMap": true,        // generate .js.map files
-    "verbatimModuleSyntax": true, // enforce explicit import/export types
-    "strict": true,               // enable all strict checks
-    "noUnusedLocals": true,       // error on unused local variables
-    "noUnusedParameters": true,   // error on unused function parameters
-    "noImplicitAny": true,        // error on implicit 'any' types
-    "noImplicitReturns": true,    // error on missing return statements
-    "skipLibCheck": true,         // skip type-checking of .d.ts files
+    "declaration": true,                    // generate .d.ts files
+    "declarationMap": true,                 // generate .d.ts.map files
+    "sourceMap": true,                      // generate .js.map files
+    "verbatimModuleSyntax": true,           // enforce explicit import/export types
+    "isolatedDeclarations": true,           // require explicit types on all exports (faster .d.ts emit)
+    "strict": true,                         // enable all strict type checks
+    "exactOptionalPropertyTypes": true,     // treat optional properties strictly (undefined vs missing)
+    "noFallthroughCasesInSwitch": true,     // error on switch cases that fall through
+    "noUncheckedIndexedAccess": true,       // index signatures include undefined
+    "noPropertyAccessFromIndexSignature": true, // prevent property access outside index signatures
+    "noUnusedLocals": true,                 // error on unused local variables
+    "noUnusedParameters": true,             // error on unused function parameters
+    "noImplicitAny": true,                  // error on implicit 'any' types
+    "noImplicitReturns": true,              // error on functions missing return statements
+    "skipLibCheck": true,                   // skip type-checking of declaration files
     "forceConsistentCasingInFileNames": true, // enforce consistent file casing
-    "noEmitOnError": true         // skip emit if type errors exist
+    "noEmitOnError": true                   // don't emit files if there are type errors
   }
 }
 ```
@@ -164,6 +169,7 @@ Extends `base` and adds `Node` environment targeting:
   "compilerOptions": {
     "target": "ES2024",          // modern JS output
     "lib": ["ES2024"],           // modern built-in types
+    "types": ["node"],           // Node.js global type definitions
     "module": "NodeNext",        // Node ESM-compatible modules
     "moduleResolution": "NodeNext" // Node ESM module resolution
   }
@@ -181,7 +187,12 @@ Extends `base` and adds `browser` environment targeting:
     "target": "ES2024",                        // modern JS output
     "lib": ["ES2024", "DOM", "DOM.Iterable"],  // modern + DOM types
     "module": "ESNext",                        // bundler-compatible modules
-    "moduleResolution": "Bundler"              // bundler module resolution
+    "moduleResolution": "Bundler",              // bundler module resolution
+    "allowImportingTsExtensions": true,        // allow explicit .ts extensions in imports
+    "erasableSyntaxOnly": true,                // ensure compatibility with type-stripping engines
+    "noEmit": true,                            // hand over file emission to the bundler
+    "declaration": false,                      // disable base declaration emit to prevent noEmit conflict
+    "declarationMap": false                    // disable base declaration maps
   }
 }
 ```
