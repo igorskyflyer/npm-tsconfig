@@ -1,53 +1,58 @@
 {
-    "name": "@igorskyflyer/tsconfig",
-    "version": "1.0.2",
-    "description": "🔧 Opinionated, reusable TSConfig base for modern TypeScript projects by igorskyflyer. 🧠",
-    "files": [
-        "tsconfig.base.json",
-        "tsconfig.browser.json",
-        "tsconfig.json",
-        "tsconfig.node.json"
-    ],
-    "exports": {
-        ".": "./tsconfig.json",
-        "./base": "./tsconfig.base.json",
-        "./node": "./tsconfig.node.json",
-        "./browser": "./tsconfig.browser.json"
-    },
-    "scripts": {
-        "pub": "git push origin main --tags"
-    },
-    "keywords": [
-        "tsconfig",
-        "typescript",
-        "tooling",
-        "node",
-        "browser",
-        "standard",
-        "opinionated",
-        "compile",
-        "javascript",
-        "transpiling",
-        "transpiler",
-        "igor dimitrijević",
-        "igorskyflyer"
-    ],
-    "license": "MIT",
-    "author": "Igor Dimitrijević <support@igorskyflyer.me> (https://github.com/igorskyflyer)",
-    "funding": "https://ko-fi.com/igorskyflyer",
-    "homepage": "https://github.com/igorskyflyer/npm-tsconfig",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/igorskyflyer/npm-tsconfig.git"
-    },
-    "bugs": {
-        "url": "https://github.com/igorskyflyer/npm-tsconfig/issues"
-    },
-    "peerDependencies": {
-        "typescript": ">=5.0.0"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "packageManager": "pnpm@10.32.1"
+  "name": "@igorskyflyer/tsconfig",
+  "version": "2.0.0",
+  "description": "🔧 Opinionated, reusable TSConfig base for modern TypeScript projects. 🧠",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "exports": {
+    ".": "./tsconfig.json",
+    "./base": "./tsconfig.base.json",
+    "./node": "./tsconfig.node.json",
+    "./browser": "./tsconfig.browser.json"
+  },
+  "files": [
+    "tsconfig.base.json",
+    "tsconfig.browser.json",
+    "tsconfig.json",
+    "tsconfig.node.json"
+  ],
+  "peerDependencies": {
+    "typescript": ">=6.0.0",
+    "@types/node": ">=24.0.0"
+  },
+  "scripts": {
+    "pub": "git push origin main --tags"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@11.11.0",
+  "private": false,
+  "license": "MIT",
+  "author": "Igor Dimitrijević <support@igorskyflyer.me> (https://github.com/igorskyflyer)",
+  "funding": "https://ko-fi.com/igorskyflyer",
+  "homepage": "https://github.com/igorskyflyer/npm-tsconfig",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorskyflyer/npm-tsconfig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igorskyflyer/npm-tsconfig/issues"
+  },
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "tooling",
+    "node",
+    "browser",
+    "standard",
+    "opinionated",
+    "compile",
+    "javascript",
+    "transpiling",
+    "transpiler",
+    "igor dimitrijević",
+    "igorskyflyer"
+  ]
 }
