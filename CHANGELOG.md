@@ -7,8 +7,8 @@
 ## v2.0.0 – *2026-07-10*
 
 _**Features**_
-- 🔩 **config**: add default types to `tsconfig.node.json
-`
+- 🔩 **config**: add default types to `tsconfig.node.json`
+
 <br>
 
 _**Maintenance**_
