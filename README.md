@@ -1,7 +1,14 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/igorskyflyer/npm-tsconfig/main/media/tsconfig.png" alt="Icon of TSConfig" width="256" height="256">
+  <img src="https://raw.githubusercontent.com/igorskyflyer/npm-tsconfig/refs/heads/main/media/tsconfig.png" alt="Icon of TSConfig" width="256" height="256">
   <h1>TSConfig</h1>
+  <a href="https://www.npmjs.com/package/@igorskyflyer/tsconfig"><img src="https://img.shields.io/npm/v/@igorskyflyer/tsconfig.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@igorskyflyer/tsconfig"><img src="https://img.shields.io/npm/dt/@igorskyflyer/tsconfig.svg" alt="npm downloads"></a>
+  <a href="https://www.npmjs.com/package/@igorskyflyer/tsconfig"><img src="https://img.shields.io/node/v/@igorskyflyer/tsconfig.svg" alt="Node version"></a>
+  <a href="https://github.com/igorskyflyer/npm-tsconfig/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@igorskyflyer/tsconfig.svg" alt="License"></a>
+  <a href="https://liberapay.com/igorskyflyer/donate"><img src="https://img.shields.io/liberapay/receives/igorskyflyer.svg?logo=liberapay"></a>
 </div>
+
+<br>
 
 <blockquote align="center">Strict By Default • ES2024 • Node & Browser • Zero Config </blockquote>
 
@@ -222,15 +229,15 @@ Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-tsconfi
 ## Support
 
 <div align="center">
-  Engineering and documenting open-source projects<br>
-  involves a significant investment of time.
-  <br><br>
-  If this project or its implementation has provided value,<br>
-  support is greatly appreciated.
-  <br><br>
-  <a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="180" height="46"></a>
-  <br><br>
-  <em>Thank you for supporting these efforts!</em> 🙏😊
+  If this open-source project has saved you time or improved your workflow, consider supporting its continued development via <a href="https://liberapay.com/igorskyflyer/donate"><strong>LiberaPay</a> or <a href="https://ko-fi.com/igorskyflyer"><strong>Ko-Fi</strong></a>.
+  <br>
+  <br>
+  <a href="https://liberapay.com/igorskyflyer/donate"><img alt=" Igor Dimitrijević (igorskyflyer) - Donate via Liberapay to Sustain Open-Source Projects" src="https://liberapay.com/assets/widgets/donate.svg" loading="lazy"></a> <a href="https://ko-fi.com/igorskyflyer"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Support Igor Dimitrijević (igorskyflyer) - Donate via Ko-Fi to Sustain Open-Source Projects" width="120" height="30" loading="lazy"></a>
+  <br>
+  <br>
+  <blockquote>
+    Support helps fund new open-source tools, maintenance, and documentation, thank you!
+  </blockquote>
 </div>
 
 <br>
