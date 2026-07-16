@@ -4,6 +4,13 @@
 
 <br>
 
+## v2.0.1 – *2026-07-16*
+
+_**Maintenance**_
+- 📦 **deps**: upgrade pnpm version
+
+<br>
+
 ## v2.0.0 – *2026-07-10*
 
 _**Features**_
